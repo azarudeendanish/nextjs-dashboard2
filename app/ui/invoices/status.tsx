@@ -11,6 +11,11 @@ export default function InvoiceStatus({ status }: { status: string }) {
           'bg-green-500 text-white': status === 'paid',
         },
       )}
+      // className={clsx(
+      //   'bg-red-500', {
+      //     'bg-orange-500' : status == 'pending', 'bg-green-500' : status == 'paid'
+      //   } 
+      // )}
     >
       {status === 'pending' ? (
         <>

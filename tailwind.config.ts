@@ -26,6 +26,20 @@ const config: Config = {
         },
       },
     },
+    screens: {
+      'sm': '576px',
+      // => @media (min-width: 576px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 960px) { ... }
+
+      'lg': '992px',
+      'xl': '1200px',
+      'xxl': '1400px',
+      '3xl': '1600px',
+      '4xl': '1800px',
+      // => @media (min-width: 1440px) { ... }
+    },
   },
   plugins: [require('@tailwindcss/forms')],
 };
